@@ -1,0 +1,15 @@
+{
+    "name": "com.iteria.math",
+    "version": "0.1.0",
+    "displayName": "Math",
+    "description": "Provides common inter-project math functions.",
+    "unity": "2022.3",
+    "documentationUrl": "https://github.com/Iteria-LLC/math",
+    "changelogUrl": "https://github.com/Iteria-LLC/math/commits/main",
+    "licensesUrl": "https://github.com/Iteria-LLC/math/blob/main/LICENSE",
+    "author": {
+      "name": "Iteria",
+      "url": "https://github.com/Iteria-LLC"
+    }
+  }
+  
