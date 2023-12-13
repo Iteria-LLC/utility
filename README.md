@@ -1,4 +1,7 @@
-## math
+# math
+## How to install
+Select "Add package from git URL..." in the Package Manager, and enter this URL:
+##### `https://github.com/Iteria-LLC/math.git`
 
 #### Maths Class
 Namespaced under `Iteria` by default.
