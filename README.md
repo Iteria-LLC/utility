@@ -1,4 +1,4 @@
-# math
+# maths
 ## How to install
 Select "Add package from git URL..." in the Package Manager, and enter this URL:
 ##### `https://github.com/Iteria-LLC/math.git`
