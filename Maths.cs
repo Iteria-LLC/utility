@@ -119,6 +119,11 @@ namespace Iteria
 			return new Vector3(Sin(angle), 0f, Cos(angle));
 		}
 
+		public static int RandomSign()
+		{
+			return Random.value > 0.5f ? 1 : -1;
+		}
+
 		//CREDIT Scott Hilbert
 		public static float Angle(Quaternion a, Quaternion b)
 		{
