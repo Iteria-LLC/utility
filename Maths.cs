@@ -44,12 +44,6 @@ namespace Iteria
 		}
 
 		//Jacked from astar
-		/// <summary>
-		/// Returns the closest point on the line.
-		/// The line is treated as infinite.
-		/// See: ClosestPointOnSegment
-		/// See: ClosestPointOnLineFactor
-		/// </summary>
 		public static Vector3 ClosestPointOnInfiniteLine(Vector3 lineStart, Vector3 lineEnd, Vector3 point) {
 			Vector3 lineDirection = Vector3.Normalize(lineEnd - lineStart);
 			float dot = Vector3.Dot(point - lineStart, lineDirection);
@@ -125,7 +119,7 @@ namespace Iteria
 			return new Vector3(Sin(angle), 0f, Cos(angle));
 		}
 
-		//CREDIT Scott Hilbert, the God
+		//CREDIT Scott Hilbert
 		public static float Angle(Quaternion a, Quaternion b)
 		{
 			Quaternion c = Quaternion.Inverse(a) * b;
@@ -136,7 +130,7 @@ namespace Iteria
 			return angle;
 		}
 
-		//CREDIT Scott Hilbert, the God
+		//CREDIT Scott Hilbert
 		public static Quaternion RotateTowards(Quaternion a, Quaternion b, float maxDegrees, float minAngleBeforeSnapping = 0.001f)
 		{
 			float angle = Angle(a, b);
