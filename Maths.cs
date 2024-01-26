@@ -60,26 +60,6 @@ namespace Iteria
 			return lineStart + direction * projectedLength;
 		}
 
-		public static float DeltaLerp(this float from, float to, float speedFactor, float sharpnessFactor = 0.5f)
-		{
-			return Lerp(from, to, 1f - Pow(1f - sharpnessFactor, Time.deltaTime * speedFactor));
-		}
-
-		public static Quaternion DeltaLerp(this Quaternion from, Quaternion to, float speedFactor, float sharpnessFactor = 0.5f)
-		{
-			return Quaternion.Lerp(from, to, 1f - Pow(1f - sharpnessFactor, Time.deltaTime * speedFactor));
-		}
-
-		public static Color DeltaLerp(this Color from, Color to, float speedFactor, float sharpnessFactor = 0.5f)
-		{
-			return Color.Lerp(from, to, 1f - Pow(1f - sharpnessFactor, Time.deltaTime * speedFactor));
-		}
-
-		public static Vector3 DeltaLerp(this Vector3 from, Vector3 to, float speedFactor, float sharpnessFactor = 0.5f)
-		{
-			return Vector3.Lerp(from, to, 1f - Pow(1f - sharpnessFactor, Time.deltaTime * speedFactor));
-		}
-
 		public static Vector3 BezierQuadratic(Vector3 a, Vector3 b, Vector3 control, float t)
 		{
 			return Vector3.Lerp(Vector3.Lerp(a, control, t), Vector3.Lerp(control, b, t), t);
