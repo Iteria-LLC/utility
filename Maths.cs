@@ -71,7 +71,10 @@ namespace Iteria
 			return BezierQuadratic(a, b, control, t);
 		}
 
-		public static float DeltaLerpVariableSpeed(this float from, float to, float speedFactorDown, float speedFactorUp, float sharpnessFactor = 0.5f)
+		public static float DeltaLerp(float from, float to, float speedFactor, float sharpnessFactor = 0.5f)
+			=> Lerp(from, to, 1f - Pow(1f - sharpnessFactor, Time.deltaTime * speedFactor));
+
+		public static float DeltaLerpVariableSpeed(float from, float to, float speedFactorDown, float speedFactorUp, float sharpnessFactor = 0.5f)
 		{
 			return Lerp(from, to, 1f - Pow(1f - sharpnessFactor, Time.deltaTime * (from > to ? speedFactorDown : speedFactorUp)));
 		}
